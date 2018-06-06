@@ -1,0 +1,7 @@
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\TicketParser.exe.config
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\TicketParser.exe
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\TicketParser.pdb
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\Newtonsoft.Json.dll
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\Newtonsoft.Json.xml
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Release\TicketParser.exe
+C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Release\TicketParser.pdb

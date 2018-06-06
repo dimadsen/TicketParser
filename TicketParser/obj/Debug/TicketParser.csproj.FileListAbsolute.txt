@@ -1,0 +1,8 @@
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Debug\TicketParser.exe.config
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Debug\TicketParser.exe
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Debug\TicketParser.pdb
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Debug\Newtonsoft.Json.dll
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Debug\Newtonsoft.Json.xml
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.csprojResolveAssemblyReference.cache
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.exe
+c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.pdb
