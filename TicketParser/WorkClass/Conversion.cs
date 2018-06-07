@@ -13,6 +13,7 @@ namespace TicketParser
     {
         public static void Start()
         {
+            Console.WriteLine(DateTime.Now);
             var message = "Хай. Погнали смотреть какие билеты в наличии. Будем долбить их каждые 45 секунд";
             Console.WriteLine(message);
 
@@ -54,7 +55,7 @@ namespace TicketParser
             matches.ForEach(match =>
             {
                 match.Categories.ForEach(m => categories.Add($"{m.Name} - {m.Quantity}"));
-                message = $@"НАЙДЕНЫ БИЛЕТЫ!!!! НАЙДЕНЫ БИЛЕТЫ!!!
+                message = $@"НАЙДЕНЫ БИЛЕТЫ!!!! НАЙДЕНЫ БИЛЕТЫ!!! Фиксирую время: {DateTime.Now}
 {match.Name} 
 {string.Join(", ", categories.ToArray())}";
 

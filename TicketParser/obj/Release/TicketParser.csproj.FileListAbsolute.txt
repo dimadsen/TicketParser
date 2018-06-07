@@ -5,3 +5,12 @@ C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParse
 C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\bin\Release\Newtonsoft.Json.xml
 C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Release\TicketParser.exe
 C:\Users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Release\TicketParser.pdb
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Release\TicketParser.exe.config
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Release\TicketParser.exe
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Release\TicketParser.pdb
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Release\Newtonsoft.Json.dll
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Release\Newtonsoft.Json.xml
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Release\TicketParser.csprojResolveAssemblyReference.cache
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Release\TicketParser.csproj.CoreCompileInputs.cache
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Release\TicketParser.exe
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Release\TicketParser.pdb
