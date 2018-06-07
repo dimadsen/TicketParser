@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace TicketParser
@@ -19,16 +18,16 @@ namespace TicketParser
         /// <summary>
         /// Id категории 
         /// </summary>
-        public string c { get; set; } 
+        public string c { get; set; }
 
         /// <summary>
         /// Id наличия
         /// </summary>
-        public string a { get; set; } 
+        public string a { get; set; }
 
         public static async Task<List<Availability>> GetTickets()
         {
-            List< Availability> tickets = null;
+            List<Availability> tickets = null;
             try
             {
                 Console.WriteLine("Начал грязный парсинг...");
@@ -45,13 +44,13 @@ namespace TicketParser
 
                 // десериализация ответа в формате json
                 var content = await response.Content.ReadAsStringAsync();
-                JObject o = JObject.Parse(content);
-                var str = o.SelectToken(@"$.Data.Availability");
-                var availabilitys = JsonConvert.DeserializeObject<List<Availability>>(str.ToString());
+                JObject json = JObject.Parse(content);
+                var j = json.SelectToken(@"$.Data.Availability");
+                var dirtyTickets = JsonConvert.DeserializeObject<List<Availability>>(j.ToString());
 
 
-                tickets = availabilitys.Where(x => x.c != "18" && x.c != "19" && x.c != "20" && x.c != "37").ToList();
-                Console.WriteLine("Всё норма. страничка с билетиками успешно получена");
+                tickets = dirtyTickets.Where(x => x.c != "18" && x.c != "19" && x.c != "20" && x.c != "37").ToList();
+                Console.WriteLine("Так, страничка с билетиками успешно получена!");
                 return tickets;
             }
             catch (Exception ex)
@@ -59,8 +58,8 @@ namespace TicketParser
                 Console.WriteLine($"Чёт не удалось загрузить страничку с билетами. Причина: {ex.Message}");
                 return tickets;
             }
-            
+
         }
     }
-    
+
 }

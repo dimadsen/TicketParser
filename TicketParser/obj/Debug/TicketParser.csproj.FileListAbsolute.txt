@@ -6,3 +6,12 @@ c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParse
 c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.csprojResolveAssemblyReference.cache
 c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.exe
 c:\users\svercosh\documents\visual studio 2015\Projects\TicketParser\TicketParser\obj\Debug\TicketParser.pdb
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Debug\TicketParser.exe.config
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Debug\TicketParser.exe
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Debug\TicketParser.pdb
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Debug\Newtonsoft.Json.dll
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\bin\Debug\Newtonsoft.Json.xml
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Debug\TicketParser.csprojResolveAssemblyReference.cache
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Debug\TicketParser.csproj.CoreCompileInputs.cache
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Debug\TicketParser.exe
+C:\Users\roskvartal\Documents\TicketParser\TicketParser\obj\Debug\TicketParser.pdb

@@ -5,7 +5,6 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace TicketParser
 {
@@ -13,7 +12,6 @@ namespace TicketParser
     {
         public static void Start()
         {
-            Console.WriteLine(DateTime.Now);
             var message = "Хай. Погнали смотреть какие билеты в наличии. Будем долбить их каждые 45 секунд";
             Console.WriteLine(message);
 
@@ -22,7 +20,7 @@ namespace TicketParser
 
             Console.ReadKey();
         }
-
+        
         public static async void ViewTickets(object o)
         {
             var tickets = await Availability.GetTickets();
@@ -30,17 +28,18 @@ namespace TicketParser
 
             var matches = new List<Match>();
 
-            groupsTickets?.ForEach(m =>
+            groupsTickets?.ForEach(group =>
             {
-                if (m.Any(x => x.a != "0"))
-                    matches.Add(m.ConvertToMatch());
+                if (group.Any(x => x.a != "0"))
+                    matches.Add(group.ConvertToMatch());
             });
 
             if (matches.Count > 0)
                 ConsoleWrite(matches);
             else
             {
-                Console.WriteLine("Не нашёл билетов :(((");
+                Console.WriteLine("Нет доступных билетов :(((");
+                Console.WriteLine();
             }
 
         }

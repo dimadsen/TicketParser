@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TicketParser
 {
     public static class TicketInfo
     {
-        public static string GetMatchName(string match)
+        public static string GetMatchName(string name)
         {
             var matches = new Dictionary<string, string>
             {
@@ -79,7 +76,7 @@ namespace TicketParser
                 {"IMT64","Матч 64 - Финал - Москва «Лужники» 15 ИЮЛ 18:00"},
 #endregion
             };
-            return matches.Where(x => x.Key == match).Select(x => x.Value).First();
+            return matches.Where(x => x.Key == name).Select(x => x.Value).First();
         }
 
         public static string GetTicketCategory(string category)
@@ -107,27 +104,27 @@ namespace TicketParser
             return quant.Where(x => x.Key == quantity).Select(x => x.Value).First();
         }
 
-        public static Match ConvertToMatch(this IGrouping<string, Availability> match)
+        public static Match ConvertToMatch(this IGrouping<string, Availability> group)
         {
-            var m = new Match()
+            var match = new Match()
             {
-                Name = GetMatchName(match.Select(x => x.p).First()),
+                Name = GetMatchName(group.Key),
                 Categories = new List<Category>()
             };
 
-            match.ToList().ForEach(x =>
+            group.ToList().ForEach(m =>
             {
-                if (x.a != "0")
+                if (m.a != "0")
                 {
-                    m.Categories.Add(new Category
+                    match.Categories.Add(new Category
                     {
-                        Name = GetTicketCategory(x.c),
-                        Quantity = GetTicketQuantity(x.a)
+                        Name = GetTicketCategory(m.c),
+                        Quantity = GetTicketQuantity(m.a)
                     });
                 }
             });
 
-            return m;
+            return match;
         }
     }
 }
